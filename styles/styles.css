@@ -8,7 +8,7 @@ body {
 
 .wrapper {
   display: grid;
-  grid-template-columns: repeat (10, 1fr);
+  grid-template-columns: (10, 1fr);
   grid-template-rows: auto;
 }
 
@@ -229,7 +229,7 @@ form, p {
 
 }
 
-input[type="text"], input[type="email"], input[type="phone"] {
+input[type="text"], input[type="email"], input[type="tel"] {
   background: grey;
   width: 85%;
   text: 300px;
@@ -237,7 +237,7 @@ input[type="text"], input[type="email"], input[type="phone"] {
   padding:5px;
 }
 
-input[type="text"]:focus, input[type="email"]:focus, input[type="phone"]:focus {
+input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus {
     background-color: pink;
   }
 
