@@ -57,9 +57,24 @@ section {
   padding: 2rem;
 }
 
+section > h1 {
+  color: black;
+  display: grid;
+  grid-column-start: 1;
+
+
+}
+
 section, h2 {
 display: grid;
 grid-column-start: 1;
+
+}
+
+.sign-up-section, form {
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 
 
@@ -190,3 +205,67 @@ footer ul li::after {
 footer p {
   color: white;
 }
+
+label, select {
+  display: block;
+  margin: 20px;
+  font-family: arial;
+  font-size: 17px;
+
+}
+
+form {
+  width: 80%;
+  margin: 20px;
+}
+
+form, p {
+  display: inline-block;
+  margin: 20px;
+  font-family: arial;
+  font-size: 17px;
+  font-weight: bold;
+
+
+}
+
+input[type="text"], input[type="email"], input[type="phone"] {
+  background: grey;
+  width: 85%;
+  text: 300px;
+  border:3px solid black;
+  padding:5px;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="phone"]:focus {
+    background-color: pink;
+  }
+
+
+
+input[type="submit"] {
+    color: white;
+    background-color: #1b447f;
+    border-color: #444444;
+    border-style: solid;
+    border-width: thick;
+    font-family: arial;
+    font-size: 30px;
+    width: 200px;
+    height: 100px;
+
+
+    }
+
+    input[type="submit"]:active {
+      border-color: #03a3df;
+    }
+
+    textarea {
+      vertical-align: top;
+
+    }
+
+    fieldset {
+      border: none
+    }

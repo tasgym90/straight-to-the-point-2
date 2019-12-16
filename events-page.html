@@ -2,10 +2,115 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Straight to the point</title>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
   </head>
-  <body>
-    <h1>Sign up for Archery classes today!</h1>
+  <body class="wrapper">
+    <header>
+    <h1>Straight to the Point</h1>
+    <img src="images/archeryAcademy-logo-white.png" alt="Arrow logo" class="logo-header">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="class-page.html">Classes</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="events-page.html">Sign-up</a></li>
+        </ul>
+        </nav>
+    </header>
+    <section class="sign-up-section">
+      <h1>We're happy you're here!</h1>
+      <h2>
+        Tell us more about yourself, and we'll be in touch before your first lesson.
+        Our certified instructors are excited to meet you where you are at in your
+        archery journey.
+      </h2>
 
+      <form method="post">
+
+        <label for="name">
+          First and Last Name: <br>
+          <input type="text" name="name" id="none">
+        </label>
+
+        <label for="email">
+          Email: <br>
+          <input type="email" name="email" id="none">
+        </label>
+
+        <label for="phone-number">
+          Phone Number: <br>
+          <input type="phone" name="phone" id="none">
+        </label>
+
+        <p>Select your level of expertise:</p> <br>
+        <select name="expertise" name="expertise" id="none">
+          <option value="beginner">Beginner</option>
+          <option value="intermediate">Intermediate</option>
+          <option value="expert">Expert</option>
+        </select> <br>
+
+        <p>Select which facility you are closet to:</p> <br>
+        <select name="region" name="region" id="none">
+          <option value="univeristy-district">University District</option>
+          <option value="queen-anne">Queen Anne</option>
+          <option value="captiol-hill">Captiol Hill</option>
+          <option value="tukwila">Tukwila</option>
+          <option value="university-district" selected>University District</option>
+        </select> <br>
+
+        <p>Are you right or left handed?</p>
+        <label for="right"> right
+          <input type="radio" name="dom-hand" value="right" id="right">
+        </label>
+        <label for="left"> left
+          <input type="radio" name="dom-hand" value="left" id="left">
+        </label> <br>
+
+       <label for="month">
+       What is the earliest month you are available to begin classes?:</p> <br>
+         <input type="month" name="month" id="none">
+       </label> <br>
+
+       <label for="comments">
+         Leave questions or comments below:<br>
+        <textarea name="more-comments" id="comments" rows="25">
+       </textarea>
+       </label>
+
+        <label>
+          <input type="submit" value="submit" id="submit">
+        </label>
+      </form>
+    </section>
+
+    <aside>
+      <h2>Holiday Promotion Deal, through December, 31st!</h2>
+        <p>If you sign up before the end of the year, you will receive
+          your first month free! In addition, you can bring a friend or relative
+          at no extra charge.
+        </p>
+    </aside>
+
+    <footer>
+      <img src="images/archeryAcademy-logo-white.png" alt="archery image">
+      <p> Straight to the Point Archery
+        <br>
+          528 Nock Point Ln
+        <br>
+          Tacoma, WA 98412
+        <br>
+          archery-education@example.com
+        <br>
+          (253)555-1010
+      </p>
+      <ul>
+        <li>footer link 1</li>
+        <li>footer link 2</li>
+        <li>footer link 3</li>
+        <li>footer link 4</li>
+      </ul>
+    </footer>
   </body>
 </html>
