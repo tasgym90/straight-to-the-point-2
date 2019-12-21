@@ -53,29 +53,35 @@
 
         <p>Select which facility you are closet to:</p> <br>
         <select name="region" id="region">
-          <option value="univeristy-district">University District</option>
-          <option value="queen-anne">Queen Anne</option>
-          <option value="captiol-hill">Captiol Hill</option>
+          <optgroup label="east">
+            <option value="univeristy-district">University District</option>
+          </optgroup>
+          <optgroup label="central">
+            <option value="queen-anne">Queen Anne</option>
+            <option value="captiol-hill">Captiol Hill</option>
+          </optgroup>
           <option value="tukwila">Tukwila</option>
           <option value="university-district" selected>University District</option>
         </select> <br>
 
-        <p>Are you right or left handed?</p>
-        <label for="right"> right
-          <input type="radio" name="dom-hand" value="right" id="right">
-        </label>
-        <label for="left"> left
-          <input type="radio" name="dom-hand" value="left" id="left">
-        </label> <br>
+        <fieldset>
+          <legend>Are you right handed or left handed:
+            <label for="right"> right
+            <input type="radio" name="dom-hand" value="right" id="right">
+            </label>
+            <label for="left"> left
+            <input type="radio" name="dom-hand" value="left" id="left">
+            </label>
+          </legend>
+        </fieldset>
 
        <label for="month">
        What is the earliest month you are available to begin classes?: <br>
          <input type="month" name="month" id="month">
        </label> <br>
 
-       <label for="comments">
-         Leave questions or comments below:<br>
-        <textarea name="more-comments" id="comments" rows="25">
+       <label for="comments">Leave questions or comments below:</label><br>
+        <textarea name="questions-comments" id="questions-comments" rows="25">
        </textarea>
        </label>
 
